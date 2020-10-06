@@ -1,0 +1,21 @@
+<form novalidate [formGroup]="signinForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Correo electronico"
+      formControlName="email"
+      id="email"
+      type="email">
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      type="pasword"
+      matInput
+      placeholder="Contraseña"
+      formControlName="password"
+      id="password"
+      type="password">
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="warn">Iniciar sesion</button>
+
+</form>

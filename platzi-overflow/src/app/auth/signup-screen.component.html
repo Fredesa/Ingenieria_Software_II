@@ -1,0 +1,38 @@
+<form novalidate [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Nombre"
+      formControlName="firstName"
+      id="firstName">
+  </mat-form-field>
+  <mat-form-field>
+   <input
+     matInput
+     placeholder="Apellido"
+     formControlName="lastName"
+     id="lastName">
+ </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Correo electronico"
+      formControlName="email"
+      id="email"
+      type="email">
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      type="pasword"
+      matInput
+      placeholder="Contraseña"
+      formControlName="password"
+      id="password"
+      type="password">
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="warn">Registrarse</button>
+  <p style="text-align: center">
+    ¿Ya tienes un usuario?
+    <a md-button color="primary" [routerLink]="['./signin-screen.component']">Iniciar sesión</a>
+  </p>
+</form>
