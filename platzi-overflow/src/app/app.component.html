@@ -1,10 +1,8 @@
 <mat-toolbar color="warn">
 
-    <span>Test de  Aptitudes y Actitudes</span>
+    <span [routerLink]="['/']">Test de  Aptitudes y Actitudes</span>
     <span class="space"></span>
-    <mat-icon >account_circle</mat-icon>
+    <mat-icon [routerLink]="['/signin']">account_circle</mat-icon>
 
 </mat-toolbar>
-<!-- <app-question-detail></app-question-detail> -->
-<!-- <app-signin-screen></app-signin-screen> -->
-<app-signup-screen></app-signup-screen>
+<router-outlet></router-outlet>

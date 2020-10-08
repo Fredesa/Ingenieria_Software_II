@@ -17,5 +17,9 @@
       type="password">
   </mat-form-field>
   <button type="submit" mat-raised-button color="warn">Iniciar sesion</button>
-
+  <p></p>
+  <p style="text-align: center">
+    ¿Eres nuevo?
+    <a mat-stroked-button color="warn" [routerLink]="['/signup']">Crear usuario</a>
+  </p>
 </form>
